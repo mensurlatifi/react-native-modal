@@ -214,8 +214,7 @@ class ReactNativeModal extends Component {
           // work correctly even when the modal has touchable buttons.
           // For reference:
           // https://github.com/react-native-community/react-native-modal/pull/197
-          const shouldSetPanResponder =
-            Math.abs(gestureState.dx) >= 4 || Math.abs(gestureState.dy) >= 4;
+          const shouldSetPanResponder = null
           if (shouldSetPanResponder && this.props.onSwipeStart) {
             this.props.onSwipeStart();
           }
